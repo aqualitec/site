@@ -295,7 +295,7 @@
             
             <div class="contact-form">
                 <h3>Envie sua Mensagem</h3>
-                <form action="https://formsubmit.co/Aqualitec@gmail.com" method="POST" id="contact-form">
+                <form action="https://formsubmit.co/aqualitec@gmail.com" method="POST" id="contact-form">
                     <div class="form-group">
                         <label for="name" class="sr-only">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Seu Nome" required>
@@ -314,8 +314,10 @@
                     </div>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://aqualitec.github.io/site/obrigado.html">
+                    <input type="hidden" name="_next" value="obrigado.html">
                     <input type="hidden" name="_subject" value="Nova mensagem do site Aqualitec">
+                    <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderemos em breve.">
+                    <input type="hidden" name="_replyto" value="">
                     
                     <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     
@@ -412,6 +414,9 @@
         phoneInput.focus();
         return;
       }
+      
+      // Se chegou até aqui, os dados são válidos - permite o envio
+      // Não chama preventDefault() para permitir o FormSubmit funcionar
     });
   });
 </script>

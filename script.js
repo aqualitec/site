@@ -286,7 +286,7 @@ class AqualitecWebsite {
         })
     }
 
-    // CORRIGIDO: Função que não interfere com o FormSubmit
+    // Função que não interfere com o FormSubmit
     setupFormHandling() {
         const form = document.getElementById("contact-form")
         if (!form) return
@@ -296,7 +296,7 @@ class AqualitecWebsite {
 
         // Apenas adiciona feedback visual, mas deixa o formulário enviar naturalmente
         form.addEventListener("submit", (e) => {
-            // NÃO previne o comportamento padrão (e.preventDefault())
+            // NÃO previne o comportamento padrão - permite envio normal
             // Apenas mostra feedback visual
             submitBtn.textContent = "Enviando..."
             submitBtn.disabled = true
@@ -305,7 +305,7 @@ class AqualitecWebsite {
             setTimeout(() => {
                 submitBtn.textContent = originalText
                 submitBtn.disabled = false
-            }, 5000)
+            }, 10000) // Aumentado para 10 segundos
         })
     }
 
