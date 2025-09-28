@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aqualitec | Soluções Premium em Vidros e Esquadrias</title>
+     <link rel="icon" type="image/png" href="logo_aqualitec_transparente.png" sizes="300x300">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Aqualitec - Especialistas em soluções premium de vidros, esquadrias de alumínio, box para banheiro, fachadas e fechamento de sacadas. Qualidade, segurança e design moderno.">
+    <meta name="keywords" content="vidros, esquadrias, alumínio, box banheiro, fachadas, fechamento sacada, guarda-corpo, espelhos">
+    <meta name="theme-color" content="#0050ff">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="Logo Aqualitec 2.png" as="image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="Logo Aqualitec 2.png" alt="Aqualitec" class="logo-img">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="Logo Aqualitec 2.png" alt="Aqualitec" class="mobile-logo">
+        </div>
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#sobre" class="mobile-nav-link">Sobre</a>
+            <a href="#servicos" class="mobile-nav-link">Serviços</a>
+            <a href="#contato" class="mobile-nav-link">Contato</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" role="banner">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Transformando Ambientes com a <span class="highlight">Leveza do Vidro</span></h1>
+            <p>Soluções premium em vidros para residências, empresas e projetos especiais, unindo <strong>beleza</strong>, <strong>segurança</strong> e <strong>inovação</strong>.</p>
+            <div class="hero-actions">
+                <a href="#contato" class="btn-primary">
+                    <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                    Solicite seu Orçamento
+                </a>
+                <a href="https://wa.me/5541996314404?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Aqualitec." class="btn-secondary" target="_blank" rel="noopener">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section-card">
+        <h2>Sobre a Aqualitec</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>Aqualitec</strong> é referência em soluções sob medida em vidro e alumínio (em uma ampla linha de qualidade) para ambientes residenciais, corporativos, educacionais e industriais.</p>
+                <p>Atuamos com tecnologia de ponta, acabamento de alto padrão e profissionais experientes para transformar ambientes com beleza, segurança e inovação.</p>
+                <div class="diferencial">
+                    <i class="bi bi-award-fill" aria-hidden="true"></i>
+                    <strong>Diferencial:</strong> Instalação segura, projetos personalizados, garantia de serviço e atendimento ágil em toda a região.
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="3t.jpeg" alt="Modern glass architecture" class="placeholder-image" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section-card">
+        <h2>Nossos Serviços</h2>
+        <ul class="servicos-list">
+            <li data-service-id="box">
+                <i class="bi bi-check2-circle"></i> Box para Banheiro em Vidro Temperado
+            </li>
+            <li data-service-id="sacada">
+                <i class="bi bi-check2-circle"></i> Fechamento de Sacadas e Varandas
+            </li>
+            <li data-service-id="fachada">
+                <i class="bi bi-check2-circle"></i> Fachadas em Vidro
+            </li>
+            <li data-service-id="espelho">
+                <i class="bi bi-check2-circle"></i> Espelhos Decorativos Sob Medida
+            </li>
+            <li data-service-id="guarda-corpo">
+                <i class="bi bi-check2-circle"></i> Guarda-Corpo em Vidro
+            </li>
+            <li data-service-id="portas">
+                <i class="bi bi-check2-circle"></i> Portas e Janelas de Vidro Temperado
+            </li>
+            <li data-service-id="laminado">
+                <i class="bi bi-check2-circle"></i> Vidros Laminados e Temperados
+            </li>
+        </ul>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section-card">
+        <h2>Galeria de Projetos</h2>
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="box">Box</button>
+            <button class="filter-btn" data-filter="espelho">Espelhos</button>
+            <button class="filter-btn" data-filter="fachada">Fachadas</button>
+            <button class="filter-btn" data-filter="guarda_corpo">Guarda-corpo</button>
+            <button class="filter-btn" data-filter="residencial">Residencial</button>
+            <button class="filter-btn" data-filter="brise">Brise</button>
+            <button class="filter-btn" data-filter="muro">Muro</button>
+            <button class="filter-btn" data-filter="fechamento_varanda">Fechamento de Varanda</button>
+            <button class="filter-btn" data-filter="cobertura">Cobertura</button>
+            <button class="filter-btn" data-filter="outro">Outros</button>
+        </div>
+        <div class="galeria-grid" id="galeria-grid">
+            <!-- Box -->
+            <div class="galeria-item" data-gallery-id="box" data-category="box">
+                <div class="image-container">
+                    <img src="box/box1.jpeg" alt="Box para Banheiro" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Box para Banheiro</div>
+            </div>
+            <!-- Espelhos -->
+            <div class="galeria-item" data-gallery-id="espelho" data-category="espelho">
+                <div class="image-container">
+                    <img src="espelhos/espelho1.jpeg" alt="Espelho Decorativo" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Espelho Decorativo</div>
+            </div>
+            <!-- Fachada -->
+            <div class="galeria-item" data-gallery-id="fachada" data-category="fachada">
+                <div class="image-container">
+                    <img src="fachada/fachada1.jpeg" alt="Fachada de Vidro" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Fachada de Vidro</div>
+            </div>
+            <!-- Guarda-corpo -->
+            <div class="galeria-item" data-gallery-id="guarda_corpo" data-category="guarda_corpo">
+                <div class="image-container">
+                    <img src="guarda_corpo/guarda_corpo3.jpeg" alt="guarda-corpo" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Guarda-Corpo</div>
+            </div>
+            <!-- Residencial -->
+            <div class="galeria-item" data-gallery-id="residencial" data-category="residencial">
+                <div class="image-container">
+                    <img src="residencial/res1.jpeg" alt="residencial" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Residência</div>
+            </div>
+            <!-- Brise -->
+            <div class="galeria-item" data-gallery-id="brise" data-category="brise">
+                <div class="image-container">
+                    <img src="brise/brise1.jpeg" alt="Brise" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Brise</div>
+            </div>
+            <!-- Muro -->
+            <div class="galeria-item" data-gallery-id="muro" data-category="muro">
+                <div class="image-container">
+                    <img src="muro/muro1.jpeg" alt="Muro de Vidro" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Muro de Vidro</div>
+            </div>
+            <!-- fechamento de varanda -->
+            <div class="galeria-item" data-gallery-id="fechamento_varanda" data-category="fechamento_varanda">
+                <div class="image-container">
+                    <img src="fechamento_varanda/fechamento1.jpeg" alt="Fechamento de Varanda" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Fechamento de Varanda</div>
+            </div>
+            <!-- Cobertura -->
+            <div class="galeria-item" data-gallery-id="cobertura" data-category="cobertura">
+                <div class="image-container">
+                    <img src="cobertura/cobertura1.jpeg" alt="Cobertura" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Cobertura</div>
+            </div>
+            <!-- Outro -->
+            <div class="galeria-item" data-gallery-id="outro" data-category="outro">
+                <div class="image-container">
+                    <img src="outros/outros1.jpeg" alt="Outro serviço em vidro" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="bi bi-eye" aria-hidden="true"></i>
+                        <span>Ver Detalhes</span>
+                    </div>
+                </div>
+                <div class="galeria-caption">Outro Projeto</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section-card">
+        <h2>Entre em Contato</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <ul class="contato-info-list">
+                    <li>
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5541996314404" target="_blank" rel="noopener">(41) 99631-4404</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:aqualitec@gmail.com">aqualitec@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <strong>Endereço:</strong>
+                        Rua Joaquim Guilhermino Primo, 295
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram" aria-hidden="true"></i>
+                        <strong>Instagram:</strong>
+                        <a href="https://www.instagram.com/aqualitec" target="_blank" rel="noopener">@aqualitec</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Envie sua Mensagem</h3>
+                <form action="https://formsubmit.co/jean.valdan.2007@gmail.com" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                   <div class="form-group">
+                        <label for="phone" class="sr-only">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Seu Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://jeanxit.github.io/aqualitec/obrigado.html">
+                    <input type="hidden" name="_subject" value="Nova mensagem do site Aqualitec">
+                    
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    
+                </form>
+            </div>
+        </div>
+                    <!-- Botão flutuante WhatsApp -->
+            <a href="https://wa.me/5541996314404?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Aqualitec." class="zap-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            </a>
+            <!-- Botão flutuante Instagram (mesmo estilo do zap-btn) -->
+            <a href="https://www.instagram.com/aqualitec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="insta-btn" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div>
+        © 2025 Aqualitec – Todos os direitos reservados.
+    </div>
+</footer>
+
+<!-- Gallery Modal -->
+<div id="modal-galeria" class="modal-overlay" style="display:none;" tabindex="-1">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Fechar galeria">&times;</button>
+    <h3 id="galeria-titulo"></h3>
+    <div class="modal-galeria-content">
+      <img id="galeria-img-principal" src="/placeholder.svg" alt="Imagem do projeto">
+      <div id="galeria-thumbs"></div>
+    </div>
+    <p id="galeria-descricao"></p>
+  </div>
+</div>
+
+<!-- Service Details Modal -->
+<div id="modal-servico" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+        <button class="modal-close" aria-label="Fechar detalhes do serviço">&times;</button>
+        <h3 id="servico-titulo"></h3>
+        <p id="servico-descricao"></p>
+        <ul id="servico-beneficios" class="service-benefits-list"></ul>
+        <a href="#contato" class="btn-primary modal-contact-btn">Solicitar Orçamento para este Serviço</a>
+    </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up"></i>
+</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+
+    // Máscara simples de telefone (formato BR)
+    phoneInput.addEventListener("input", function () {
+      let value = this.value.replace(/\D/g, "");
+      if (value.length > 11) value = value.slice(0, 11);
+      if (value.length > 0) value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+      if (value.length > 10) value = value.replace(/(\d{5})(\d{4})$/, "$1-$2");
+      this.value = value;
+    });
+
+    // Validação de e-mail com regex
+    function isEmailValid(email) {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+
+    // Validação de telefone com DDD + 9 dígitos
+    function isPhoneValid(phone) {
+      const digits = phone.replace(/\D/g, "");
+      return /^\d{11}$/.test(digits);
+    }
+
+    form.addEventListener("submit", function (e) {
+      const emailVal = emailInput.value.trim();
+      const phoneVal = phoneInput.value.trim();
+
+      if (!isEmailValid(emailVal)) {
+        e.preventDefault();
+        alert("Por favor, insira um e-mail válido.");
+        emailInput.focus();
+        return;
+      }
+
+      if (!isPhoneValid(phoneVal)) {
+        e.preventDefault();
+        alert("Por favor, insira um telefone válido com DDD e 9 dígitos.");
+        phoneInput.focus();
+        return;
+      }
+    });
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
